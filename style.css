@@ -21,6 +21,7 @@ html, body {
 
 #avatar {
   display: inline;
+  background-color: #5D4157;
   background-image: url("./zett-static.png");
   width: 64px;
   height: 64px;
@@ -28,11 +29,17 @@ html, body {
   border-radius: 50%;
   border: 4px solid #838689;
   box-shadow: 0px 1px 2px #121112, 0px 2px 8px #121112;
+  transition: width 0.5s ease, height 0.5s ease, background-position 0.5s ease;
+}
+
+#avatar:hover {
+  width: 128px;
+  height: 128px;
+  background-position: 0px 0px;
 }
 
 #contents {
   position: relative;
-  background-color: red;
   min-height: 100%;
   margin-top: 64px;
 }
